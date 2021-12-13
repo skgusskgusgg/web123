@@ -1,0 +1,42 @@
+@charset"utf-8";
+/***** style *****/
+header #header_ht{
+    position: relative;
+    height: 109px;
+}
+
+/***** main *****/
+main .contents h2{
+    margin: 20px 0 10px;
+}
+main .contents{
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto;
+}
+main .contents section{
+    float: left;
+    text-align: left;
+}
+main .contents .txt_box{
+        width: 420px;
+       
+}
+main .contents .img_box{/* 255+25=280 */
+    width: 255px;
+    margin-left: 25px;
+} 
+main .contents figure{
+    margin: 0;
+}
+main .contents figure figcaption{
+    text-align: right;
+    font-weight: 300;
+    margin: 0;
+}
+/***** footer *****/
+footer address{
+    background-color: #eee;
+    padding: 3px 0;
+    font-style: normal;}
+    

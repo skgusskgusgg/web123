@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="웹사이트 구조 연습">
+    <!-- og -->
+    <meta property="og:title" content="웹사이트 구조 연습">
+    <meta property="og:url" content="http://kkkkkonna.netlify.app">
+    <meta property="og:image" content="http://kkkkkonna.netlify.app/asset/imades/og.jpeg">
+    <meta property="og:description" content="웹사이트 구조를 확인하기 위한 페이지 입니다.">
+    <title>선생님 websit Basic 1</title>
+    <!-- favicon -->
+    <!-- 32x32 -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="image2vector.svg" type="image/svg+xml">
+    <!-- 180x180 -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- css -->
+    <!-- 평준화 -->
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <!-- 웹폰트 -->
+    <link rel="stylesheet" href="asset/css/fonts.css">
+    <!-- style -->
+    <!--웹사이트 전반에 '공통'으로 들어가는 스타일-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!--이 페이지에만 들어가는 스타일-->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- script -->
+    <script src="asset/scripts/prefixfree.min.js"></script>
+</head>
+<body>
+    <!-- width:100% -->
+    <header>
+        <!-- 중앙정렬을 위한 한정된 범위 -->
+        <div class="wrapper" id="header_ht">
+            <h1>
+                <!--
+                    루트 상대 경로.
+                    로컬에서는 확인 되지 않음. 즉 서버에서만 확인 가능.
+                    반드시 /로 시작.
+                    index.html의 이름을 가진 경우 생략 가능하여 "/"표기 가능.(/about/)
+                    그 외 다른 이름을 가진경우 파일명 작성하여 경로 설정(about/about.html)
+                    지금 이 링크는 최상위 루트 디렉토리(폴더) 아래 index.html을 의미.
+                -->
+                <a href="./"><img src="http://via.placeholder.com/185x50/161853/fff?text=logo" alt="로고"></a>
+            </h1>
+            <ul id="register">
+                <li><a href="register/login.html">Login</a></li>
+                <!-- index.html 이름을 가지지 않았기 때문에 파일명 작성해야 함. -->
+                <li><a href="register/joinUs.html">Join Us</a></li>
+            </ul>
+            <ul id="gnb">
+                <li><a href="intro/">회사소개</a></li><!-- intro/index.html/-->
+                <li><a href="brand/">브랜드소개</a></li><!-- brand/index.html/-->
+                <li><a href="store/">매장안내</a></li><!-- store/index.html/-->
+                <li><a href="sevice/">고객센터</a></li><!-- service/index.html/-->
+                <li><a href="francisee/">가맹문의</a></li><!-- frenchisee/index.html/-->
+            </ul>
+        </div>
+    </header>
+    <main>
+        <img src="http://via.placeholder.com/980x300/f90716/fff?text=slide1" alt="slide1">
+        <div class="contents" id="header_ht">
+            <section class="txt_box">
+                <h2>Consectetur</h2>
+                <p>청춘을 하여도 천하를 하였으며, 인생에 예수는 설산에서 그들은 운다.
+                    우리의 없으면, 뜨거운지라, 심장의 보배를 피다. 보내는 석가는 모래뿐일 얼음에 말이다. 
+                    위하여 크고 예가 이상의 생의 새 위하여서.</p>
+            </section>
+            <section class="img_box">
+                <h2>Velit</h2>
+                <figure>
+                    <img src="http://via.placeholder.com/255x140/ff5403/fff?text=img1" alt="">
+                    <figcaption>Phasellus</figcaption>
+                </figure>
+            </section>
+            <section class="img_box">
+                <h2>Viverra</h2>
+                <figure>
+                    <img src="http://via.placeholder.com/255x140/ffca03/fff?text=img2" alt="">
+                    <figcaption>Sed Sit</figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+    <footer class="wrapper">
+       <address>
+        권나현 에프엔씨 Food Service Menagement 경기123-12 Tel.031-123-1234 Fax.031-123-1224
+       </address> 
+       &copy;Copyright By Knh All Right Reserved.
+    </footer>
+</body>
+</html>

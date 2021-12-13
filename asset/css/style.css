@@ -1,0 +1,100 @@
+@charset"utf-8";
+/* 웹사이트 전반에 공통으로 들어가는 스타일 */
+/***** style *******/
+body{
+    font-family: 'Pretendard',-apple-system, BlinkMacSystemFont,"apple sd gothic neo", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 1.4;
+    text-align: center;
+}
+img{
+    vertical-align: top;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/***** header *****/
+header{
+    border-bottom: 1px solid #000;
+    width: 100%;
+    margin-bottom: 20px;
+}
+header #header_ht{
+    height: 109px;
+    position: relative;
+}
+.wrapper{
+    width: 980px;
+    margin: 0 auto;
+}
+header li{
+    float: left;
+}
+header h1{
+    position: absolute;
+    margin: 0;
+    bottom: 5px;
+}
+header #register{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    font-weight: 300;
+    font-size: 16px;
+}
+header #register li:first-child::after{/*li 첫번째 자식 뒤쪽*/
+    content: "";
+    border-right: 1px solid #000;
+   /* width: 1px; 
+    background-color: #000;*/
+    height: 12px;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+header #register a:hover{
+    color: red;
+}
+header #gnb{
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    font-family: 'GmarketSans';
+    font-size: 24px;
+    font-weight: 700;
+}
+header #gnb a{
+    display: block;
+    padding: 5px 20px;
+    /*
+    width:130px;
+    height:30px;
+    line-height:30px;
+    */
+}
+header #gnb a:hover{
+    background-color: #4c3f91;
+    color: #fff;
+}
+footer{
+    font-weight: 300;
+    margin:50px 0 0 ;
+    font-size: 16px;
+    width: 980px;
+    margin: 0 auto;
+    padding: 3px 0;
+    margin-bottom: 6px;
+}
+footer address{
+    background-color: #eee;
+    padding: 3px 0;
+    font-style: normal;}
